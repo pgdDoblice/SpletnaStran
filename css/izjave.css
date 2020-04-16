@@ -11,17 +11,3 @@
     width: 100%;
     height: 100%;
 }
-
-.class-email{
-    display: grid;
-}
-
-.send-email{
-    display: grid;
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-.send-email{
-    color: grey;
-}
