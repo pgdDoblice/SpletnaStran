@@ -1,0 +1,20 @@
+.email{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    color:gray
+}
+
+.email p{
+    text-align: right;
+    padding-right: 5px;
+}
+
+.send-email{
+    display: grid;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.send-email{
+    color: grey;
+}

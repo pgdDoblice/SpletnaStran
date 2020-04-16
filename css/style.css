@@ -1,0 +1,335 @@
+/* navigation bar */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* heder */
+.header-style{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: 55% 45%;
+    padding-bottom: 5px;
+}
+
+.header-title{
+    color: grey;
+    text-align: right;
+    text-size-adjust: auto;
+    font-size: 2em;
+}
+
+.header-img{
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 70px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    /*font-size: 1.1em;*/
+    /*line-height: 1.5;*/
+  }
+
+
+/* navigation bar */
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    background-color: #E85A4F;
+    font-family: 'Inria Serif', serif;
+}
+
+.logo{
+    color: white;
+    padding-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.logo h4{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    padding-right: 10px;
+    /*justify-content: right;*/
+    justify-content: space-evenly;
+}
+
+.nav-links li{
+    list-style: none;
+    float: right;
+    margin: 0 0 3px 0;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 10px;
+    /*margin-right: 20px; */
+}
+/*
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+} */
+
+.nav-links a:hover { 
+    border-bottom: 2px solid #fff;
+  }
+
+.nav-links a.active {
+    border-bottom: 2px solid #fff;
+  }
+
+.burger{
+    cursor: pointer;
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-bar-short{
+    display: none;
+}
+
+/*
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+*/
+
+  /* aktualni dogodni */
+.aktualne-stvari{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.aktualni-dogodki{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("image/13.delavnica-torbica/1.jpg");
+}
+/* Calendar */
+#calendar{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    margin:0 auto;
+    margin-top:-20px;
+    margin-bottom:2%;
+    border-radius:5px;
+    font-family: "Code Light";
+    text-align:center;
+    color:#000000;
+  }
+  
+  #calendar h1{
+    background:#0068BD;
+    border-radius:5px 5px 0 0;
+    padding:20px;
+    font-size:140%;
+    font-weight:300;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#fff;
+    cursor:default;
+  }
+  
+  #calendar table{
+    border-top:1px solid #ddd;
+    border-left:1px solid #ddd;
+    border-spacing:0;
+    border-radius:0 0 5px 5px;
+  }
+  
+  #calendar td{
+    width:38px;
+    height:38px;
+    background:#eee;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding:6px;
+    cursor:pointer;
+    transition:background .3s;
+    -webkit-transition:background .3s;
+  }
+  
+  #calendar td:hover:not(.current){
+    background:#ddd;
+  }
+  
+  #calendar .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ *{
+    background:#fff;
+    color:#999;
+  }
+  
+  #calendar .currentA{
+    background:#CCCCCC;
+    font-weight:700;
+    color:#0077B9;
+  }
+  
+  #calendar .currentO{
+    background:#CCCCCC;
+    font-weight:700;
+    color:#900002;
+  }
+  
+  #calendar .hastask{
+    font-weight:700;
+    color: #FF0000;
+  }
+  #calendar .availableDay{
+      color: #0077B9;
+  }
+  #calendar .occupiedDay{
+      background: #ED4337;
+      color: #ffffff;
+  }
+  
+  #calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 5px;}
+  #calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
+
+
+  /* Caledar titel */
+
+.Second-title{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.calendar-title{
+    color: grey;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.aktualno{
+    color: grey;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+  /* Smaller screen */
+@media screen and (max-width:450px){
+    .header-title{
+        font-size: 15vw;
+    }
+
+    .logo h4{
+        font-size: 5vw;
+    }
+}
+@media screen and (max-width:700px){
+    /* heder */
+    .header-style{
+        grid-template-columns: 1fr;
+        padding-bottom: 5px;
+    }
+    .header-img{
+        display: none;
+    }
+
+    .header-title{
+        text-align: center;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar{grid-template-columns: 90% 10%;}
+    .nav-links{display: none;}
+
+    /* side bar */
+    .nav-bar-short{display: grid;}
+
+    .nav-links-short{
+        position: absolute;
+        right: 0px;
+        background-color: #E85A4F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links-short a:hover { 
+        border-bottom: 2px solid #fff;
+      }    
+
+    .nav-links-short a{
+        color: #ffffff;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 2vh;
+    }
+
+    .nav-links-short li{
+        opacity: 0;
+        list-style: none;
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+    
+}
