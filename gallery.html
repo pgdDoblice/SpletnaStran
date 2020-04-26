@@ -101,9 +101,7 @@
     <div>
       <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="image/delavnica1/1.png">
-            <img src="image/delavnica1/cropped/1_cropped.png" alt="Cinque Terre" width="600" height="400">
-          </a>
+            <img src="image/delavnica1/cropped/1_cropped.png" alt="Cinque Terre" width="600" height="400" onclick="openModal();currentSlide(1)">
         </div>
       </div>
       <div class="responsive">
@@ -922,6 +920,56 @@
      </div>
    </div>
  </div>
+
+
+ <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img class="image_gallery" src="image/delavnica1/1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img_mountains_wide.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img_lights_wide.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!--
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="image/delavnica1/1.png.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    -->
+  </div>
+</div>
+
+
  <!--
  /12. Delavnica
 -->

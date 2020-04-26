@@ -1,3 +1,13 @@
+.glava{
+    text-align: center;
+    color: #000000;
+    background-color: #ddd;
+}
+
+.glava h1{
+    font-size: 2em;
+}
+
 /* navigation bar */
 *{
     margin: 0px;
@@ -13,7 +23,7 @@
 }
 
 .header-title{
-    color: grey;
+    color: #000000;
     text-align: right;
     text-size-adjust: auto;
     font-size: 2em;
@@ -41,7 +51,7 @@ body {
     justify-content: space-around;
     align-items: center;
     min-height: 5vh;
-    background-color: #E85A4F;
+    background-color: #fff;
     font-family: 'Inria Serif', serif;
 }
 
@@ -52,9 +62,9 @@ body {
     letter-spacing: 5px;
 }
 
-.logo h4{
-    font-size: 10px;
-    font-weight: bold;
+.logo img{
+    width: 3em;
+    
 }
 
 .nav-links{
@@ -71,11 +81,11 @@ body {
 }
 
 .nav-links a{
-    color: white;
+    color: #000000;
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     /*margin-right: 20px; */
 }
 /*
@@ -93,11 +103,11 @@ a:after {
 } */
 
 .nav-links a:hover { 
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000000;
   }
 
 .nav-links a.active {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000000;
   }
 
 .burger{
@@ -126,116 +136,37 @@ a:after {
 */
 
   /* aktualni dogodni */
-.aktualne-stvari{
+.vreme{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.aktualni-dogodki{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("image/13.delavnica-torbica/1.jpg");
+.Radarska-slika img{
+    width: 20em;
 }
-/* Calendar */
-#calendar{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 10px;
-    margin:0 auto;
-    margin-top:-20px;
-    margin-bottom:2%;
-    border-radius:5px;
-    font-family: "Code Light";
-    text-align:center;
-    color:#000000;
-  }
-  
-  #calendar h1{
-    background:#0068BD;
-    border-radius:5px 5px 0 0;
-    padding:20px;
-    font-size:140%;
-    font-weight:300;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    color:#fff;
-    cursor:default;
-  }
-  
-  #calendar table{
-    border-top:1px solid #ddd;
-    border-left:1px solid #ddd;
-    border-spacing:0;
-    border-radius:0 0 5px 5px;
-  }
-  
-  #calendar td{
-    width:38px;
-    height:38px;
-    background:#eee;
-    border-right:1px solid #ddd;
-    border-bottom:1px solid #ddd;
-    padding:6px;
-    cursor:pointer;
-    transition:background .3s;
-    -webkit-transition:background .3s;
-  }
-  
-  #calendar td:hover:not(.current){
-    background:#ddd;
-  }
-  
-  #calendar .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ *{
-    background:#fff;
-    color:#999;
-  }
-  
-  #calendar .currentA{
-    background:#CCCCCC;
-    font-weight:700;
-    color:#0077B9;
-  }
-  
-  #calendar .currentO{
-    background:#CCCCCC;
-    font-weight:700;
-    color:#900002;
-  }
-  
-  #calendar .hastask{
-    font-weight:700;
-    color: #FF0000;
-  }
-  #calendar .availableDay{
-      color: #0077B9;
-  }
-  #calendar .occupiedDay{
-      background: #ED4337;
-      color: #ffffff;
-  }
-  
-  #calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 5px;}
-  #calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
 
-
-  /* Caledar titel */
-
-.Second-title{
+.vreme_title{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .calendar-title{
-    color: grey;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.aktualno{
+    color: #000000;
+    font-size: 12px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.aktualno{
-    color: grey;
-    text-align: center;
-    text-transform: uppercase;
+.aktualni-dogodki-intervencije{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
   /* Smaller screen */
