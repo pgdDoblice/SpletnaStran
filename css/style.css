@@ -37,7 +37,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
     color: #fff;
     /*font-size: 1.1em;*/
     /*line-height: 1.5;*/
@@ -52,7 +52,7 @@ body {
     align-items: center;
     min-height: 5vh;
     background-color: #fff;
-    font-family: 'Inria Serif', serif;
+    /*font-family: 'Inria Serif', serif;*/
 }
 
 .logo{
@@ -118,7 +118,7 @@ a:after {
 .burger div{
     width: 25px;
     height: 4px;
-    background-color: white;
+    background-color: #000000;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -141,20 +141,29 @@ a:after {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.vreme div{
+    height: 50px;
+}
+
+.Radarska-slika p{
+    color: #000000;
+    text-align: center;
+}
+
 .Radarska-slika img{
-    width: 20em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .vreme_title{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.calendar-title{
     color: #000000;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 12px;
+    font-size: 12;
 }
 
 .aktualno{
@@ -164,9 +173,28 @@ a:after {
     text-transform: uppercase;
 }
 
-.aktualni-dogodki-intervencije{
+.aktualni-dogodki{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100px;
+    text-align: center;
+}
+
+.intervencije11{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+}
+
+.intervencije1 {
+    height: 100px;
+    color: #000000;
+}
+
+.intervencije1 img{
+    height: 100%;
 }
 
   /* Smaller screen */
@@ -206,7 +234,7 @@ a:after {
     .nav-links-short{
         position: absolute;
         right: 0px;
-        background-color: #E85A4F;
+        background-color: #ffffff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -216,11 +244,11 @@ a:after {
     }
 
     .nav-links-short a:hover { 
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid #000000;
       }    
 
     .nav-links-short a{
-        color: #ffffff;
+        color: #000000;
         text-decoration: none;
         letter-spacing: 1px;
         font-weight: bold;
