@@ -23,53 +23,40 @@ const navSlide = () => {
 
 navSlide();
 
-
-
-// Calendar
-
-var months = "January,February,March,April,May,June,July,August,September,October,November,December".split(",");
-window.onload=function() {
-    var d = new Date();
-    document.getElementById("calendar").getElementsByTagName("h1")[0].innerHTML=months[d.getMonth()];
-    document.getElementsByTagName("td")[d.getDate()-1].className="currentA";
+// lightbox
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
 }
 
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
 
-// lightBox
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function openModal() {
-    document.getElementById("myModal").style.display = "block";
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-  
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
   }
-  
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&display=swap" rel="stylesheet"> 
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>PGD Dobliče</title>
@@ -73,42 +75,44 @@
   <div><h1 class="aktualno";">Aktualno</h1></div>
 
   <div class="aktualni-dogodki">
-    <div class="intervencije1">
+    <a href="#"><div class="intervencije1">
       <p>intervencije</p>
-      <a href="#"><img src="image/ikone/fire-alarm.png" alt="intervencije"></a>
-    </div>
-    <div class="intervencije1">
-      <p>intervencije</p>
-      <a href="#"><img src="image/ikone/fire-alarm.png" alt="intervencije"></a>
-    </div>
-    <div class="intervencije1">
-      <p>intervencije</p>
-      <a href="#"><img src="image/ikone/fire-alarm.png" alt="intervencije"></a>
-      <div class="intervencije11">intervencije</div>
-    </div>
+    </div></a>
+    <a href="#"><div class="intervencije1">
+      <p>Aktualno</p>
+    </div></a>
+    <a href="#"><div class="intervencije1">
+      <p>Vaje</p>
+    </div></a>
   </div>
   <!-- aktualno -->
 
-  <!-- vreme -->
+  <!-- vreme ------------------------------------------------------------------------------------------------------------------------------------------ -->
   <div class="vreme_title">
     <h1>Vreme</h1>
   </div>
   <!-- Radarska slika padavin -->
   <div class="vreme">
     <div class="Radarska-slika">
-      <p>Radarska slika padavin</p>
-      <a href="https://www.arso.gov.si/vreme/napovedi%20in%20podatki/radar_animacija.html" class="trenutni-dogodek"><img src="https://www.arso.gov.si/vreme/napovedi%20in%20podatki/radar_anim.gif" alt="Radarska slika padavin"></a>
+      <a href="https://www.arso.gov.si/vreme/napovedi%20in%20podatki/radar_animacija.html"><h2>Radarska slika padavin</h2></a>
+      <img src="https://www.arso.gov.si/vreme/napovedi%20in%20podatki/radar_anim.gif" alt="Radarska slika padavin" onclick="openModal();currentSlide(1)" class="hover-shadow">
     </div>
     <div class="Radarska-slika">
-      <p>Arso</p>
-      <a href="https://vreme.arso.gov.si/napoved/%C4%8Crnomelj/graf"> <img src="https://vreme.arso.gov.si/app/common/images/svg/weather/prevCloudy_day.svg"> </a>
-    </div>
-    <div class="Radarska-slika">
-      <p>slika dneva</p>
-      <a href="https://vreme-si.com/"> <img src="https://s.vreme-si.com/arso/jutri_mala_20200426081900.jpg"> </a>
+      <h2>Vreme</h2>
+      <a href="https://vreme.arso.gov.si/napoved/%C4%8Crnomelj/graf"> <p>Arso napodev za Črnomelj</p> </a>
+      <a href="https://vreme-si.com/"><p>https://vreme-si.com/</p></a>
     </div>
   </div>
-  <!-- /vreme -->
+
+  <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+          <img src="https://www.arso.gov.si/vreme/napovedi%20in%20podatki/radar_anim.gif" style="width:100%">
+      </div>
+    </div>
+</div>
+  <!-- /vreme ------------------------------------------------------------------------------------------------------------------------------------------ -->
 
 
   <script src="js/main.js"></script> 
