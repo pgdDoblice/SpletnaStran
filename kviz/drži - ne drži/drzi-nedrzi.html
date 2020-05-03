@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/quiz-1.js"></script> 
+
+<head>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="quiz-1.js"></script> 
+
+<style>
+.answers li {
+list-style: upper-alpha;
+}
+
+label {
+margin-left: 0.5em;
+cursor: pointer;
+}
+
+#results {
+background: #dddada;
+color: 000000;
+padding: 3px;
+text-align: center;
+width: 200px;
+cursor: pointer;
+border: 1px solid gray;
+}
+
+#results:hover {
+background: #3d91b8;
+color: #ffffff;
+padding: 3px;
+text-align: center;
+width: 200px;
+cursor: pointer;
+border: 1px solid gray;
+}
+
+#categorylist {
+margin-top: 6px;
+display: none;
+}
+
+#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11, #category12, #category13, #category14, #category15, #category16, #category17, #category18, #category19, #category20, #category21, #category22, #category23, #category24, #category25, #category26, #category27, #category28, #category29, #category30, #category31, #category32, #category33, #category34, #category35, #category36, #category37, #category38, #category39, #category40, #category41, #category42, #category43, #category44, #category45, #category46, #category47, #category48, #category49, #category50, #category51, #category52 {
+display: none;
+}
+
+#closing {
+display: none;
+font-style: italic;
+} 
+</style>
+</head>
+
+
+<body>
+<h1 style="color:blue;">DRŽI - NE DRŽI</h1>
+
+<p class="question">1.	KOLIKO SO LAHKO STARI OTROCI, DA SPADAJO V TEKMOVALNO KATEGORIJO PIONIRJEV GASILCEV?</p>
+<ul class="answers">
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">OD 7 DO 11 LET.</label><br/>
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">OD 12 DO 16 LET.</label><br/>
+<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">OD 16 DO 18 LET.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">2.	KOLIKO SO LAHKO STARI OTROCI, DA SPADAJO V TEKMOVALNO KATEGORIJO MLADINCEV GASILCEV?</p>
+<ul class="answers">
+<input type="radio" name="q2" value="a" id="q2a"><label for="q1a">OD 7 DO 11 LET.</label><br/>
+<input type="radio" name="q2" value="b" id="q2b"><label for="q1b">OD 12 DO 16 LET.</label><br/>
+<input type="radio" name="q2" value="c" id="q2c"><label for="q1c">OD 16 DO 18 LET.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">3.	KDO JE GASILEC PRIPRAVNIK?</p>
+<ul class="answers">
+<input type="radio" name="q3" value="a" id="q3a"><label for="q1a">JE ČLAN PGD V STAROSTI OD 16 DO 18 LET, OZIROMA NAD 18 LET V ČASU STROKOVNEGA USPOSABLJANJA IN PRIPRAVE ZA OPERATIVNEGA GASILCA. </label><br/>
+<input type="radio" name="q3" value="b" id="q3b"><label for="q1b">JE ČLAN PGD V STAROSTI OD 12 DO 16 LET, OZIROMA NAD 16 LET.  </label><br/>
+<input type="radio" name="q3" value="c" id="q3c"><label for="q1c">JE ČLAN PGD V STAROSTI OD 7 DO 11 LET, OZIROMA NAD 11 LET.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">4.	ALI LAHKO TUJEC POSTANE ČLAN PGD?</p>
+<ul class="answers">
+<input type="radio" name="q4" value="a" id="q4a"><label for="q1a">DA, VSAK KDO JE LAHKO ČLAN DRUŠTVA.</label><br/>
+<input type="radio" name="q4" value="b" id="q4b"><label for="q1b">NE.</label><br/>
+<input type="radio" name="q4" value="c" id="q4c"><label for="q1c">DA, ČE PREBIVA ALI JE ZAPOSLEN NA OBMOČJU DELOVANJA DRUŠTVA.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">5.	KATERI SO SIMBOLI V PROSTOVOLJNEM GASILSTVU?</p>
+<ul class="answers">
+<input type="radio" name="q5" value="a" id="q5a"><label for="q1a">GASILSKI ZNAK, PRAPOR.</label><br/>
+<input type="radio" name="q5" value="b" id="q5b"><label for="q1b">GASILSKI AVTOMOBIL, PRAPOR.	</label><br/>
+<input type="radio" name="q5" value="c" id="q5c"><label for="q1c">GASILSKI DOM.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">6.	NAŠTEJ NARAVNE NESREČE!</p>
+<ul class="answers">
+<input type="radio" name="q6" value="a" id="q6a"><label for="q1a">POTRES, POPLAVE, NEURJE, ZMRZAL, SUŠA, ZEMELJSKI PLAZOVI, SNEŽNI PLAZOVI ...</label><br/>
+<input type="radio" name="q6" value="b" id="q6b"><label for="q1b">POTRES, POPLAVE, NEURJE, ZMRZAL, SUŠA, ZEMELJSKI PLAZOVI, SNEŽNI PLAZOVI, VISOK SNEG,TOČA, VIHAR, ŽLED, KUŽNE BOLEZNI ...</label><br/>
+<input type="radio" name="q6" value="c" id="q6c"><label for="q1c">AVTOMOBILSKE NESREČE, LETALSKE NESREČE, HIŠNI POŽARI, RAZLITJE CISTERN ...</label><br/>
+</ul> 
+<hr>
+
+<p class="question">7.	ZAKAJ SE OB POTRESU NE SMEMO ZADRŽEVATI NA STOPNIŠČIH?</p>
+<ul class="answers">
+<input type="radio" name="q7" value="a" id="q7a"><label for="q1a">KER OBSTAJA VELIKA VERJETNOST, DA SE ZRUŠI.</label><br/>
+<input type="radio" name="q7" value="b" id="q7b"><label for="q1b">KER OBSTAJA VELIKA VERJETNOST, DA SE SPOTAKNEMO.</label><br/>
+<input type="radio" name="q7" value="c" id="q7c"><label for="q1c">KER OBSTAJA VELIKA VERJETNOST, DA NAM POSTANE SLABO.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">8.	KATERO TELEFONSKO ŠTEVILKO POKLIČEMO, KO VIDIMO, DA GORI?</p>
+<ul class="answers">
+<input type="radio" name="q8" value="a" id="q8a"><label for="q1a">113.</label><br/>
+<input type="radio" name="q8" value="b" id="q8b"><label for="q1b">114.</label><br/>
+<input type="radio" name="q8" value="c" id="q8c"><label for="q1c">112.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">9.	KAJ POVEMO, KO KLIČEMO NA TELEFONSKO ŠTEVILKO 112?</p>
+<ul class="answers">
+<input type="radio" name="q9" value="a" id="q9a"><label for="q1a">POVEMO: KDO KLIČE, KAJ SE JE ZGODILO, KJE SE JE ZGODILO, KOLIKO JE PONESREČENCEV, KAKŠNE SO POŠKODBE, KAKŠNE SO OKOLIŠČINE NA KRAJU NESREČE, KAKŠNO POMOČ POTREBUJETE.</label><br/>
+<input type="radio" name="q9" value="b" id="q9b"><label for="q1b">POVEMO: KAJ SE JE ZGODILO, KJE SE JE ZGODILO.</label><br/>
+<input type="radio" name="q9" value="c" id="q9c"><label for="q1c">POVEMO: KDO KLIČE, KAJ SE JE ZGODILO, KJE SE JE ZGODILO, KOLIKO JE PONESREČENCEV.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">10.	NAVEDI SESTAVNE DELE »TRIKOTNIKA GORENJA«?</p>
+<ul class="answers">
+<input type="radio" name="q10" value="a" id="q10a"><label for="q1a">GORLJIVA SNOV, KISIK, TOPLOTA.</label><br/>
+<input type="radio" name="q10" value="b" id="q10b"><label for="q1b">GORLJIVA SNOV, OGLJIKOV DIOKSID, TOPLOTA.</label><br/>
+<input type="radio" name="q10" value="c" id="q10c"><label for="q1c">NEGORLJIVAGORLJIVA SNOV, KISIK, TOPLOTA.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">11.	KAJ JE GORLJIVA SNOV?</p>
+<ul class="answers">
+<input type="radio" name="q11" value="a" id="q11a"><label for="q1a">TO JE SNOV, KI GORI, KADAR SO IZPOLNJENI VSI POGOJI ZA GORENJE; VSAKA SNOV, KI GORI.</label><br/>
+<input type="radio" name="q11" value="b" id="q11b"><label for="q1b">TO JE SNOV, KI GORI, NERABIJO BITI IZPOLNJENI VSI POGOJI ZA GORJNJE.</label><br/>
+<input type="radio" name="q11" value="c" id="q11c"><label for="q1c">TO JE SNOV, KI GORI, KADAR JE IZPOLNJEN VSAJ EN POGOJ ZA GORJENJE.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">12.	V KATERIH AGREGATNIH STANJIH SO LAHKO GORLJIVE SNOVI?</p>
+<ul class="answers">
+<input type="radio" name="q12" value="a" id="q12a"><label for="q1a">V TRDNEM AGREGATNEM STANJU.</label><br/>
+<input type="radio" name="q12" value="b" id="q12b"><label for="q1b">V TRDNEM IN TEKOČEM AGREGATNEM STANJU.</label><br/>
+<input type="radio" name="q12" value="c" id="q12c"><label for="q1c">V TRDNEM, TEKOČEM ALI PLINASTEM AGREGATNEM STANJU.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">13.	KATERI GOSPODINJSKI ELEKTRIČNI APARATI SO NAJVEČKRAT POVZROČITELJI POŽAROV?</p>
+<ul class="answers">
+<input type="radio" name="q13" value="a" id="q13a"><label for="q1a">ELEKTRIČNI GOSPODINJSKI PRIPOMOČKI, KI SO V OKVARI (KUHALNIK, LIKALNIK, ELEKTRIČNE PEČI, IPD).</label><br/>
+<input type="radio" name="q13" value="b" id="q13b"><label for="q1b">ELEKTRIČNI GOSPODINJSKI PRIPOMOČKI, KI NISO V OKVARI.</label><br/>
+<input type="radio" name="q13" value="c" id="q13c"><label for="q1c">ELEKTRIČNI GOSPODINJSKI PRIPOMOČKI NE POVZROČIJO POŽARA.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">14.	KOGA NAJPREJ UMAKNEMO IZ GOREČEGA STANOVANJA?</p>
+<ul class="answers">
+<input type="radio" name="q14" value="a" id="q14a"><label for="q1a">LJUDJE.</label><br/>
+<input type="radio" name="q14" value="b" id="q14b"><label for="q1b">LJUDJE IN ŽIVALI.</label><br/>
+<input type="radio" name="q14" value="c" id="q14c"><label for="q1c">ŽIVALI.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">15.	KAKO RAZVRŠČAMO POŽARE GLEDE NA OBSEG?</p>
+<ul class="answers">
+<input type="radio" name="q15" value="a" id="q15a"><label for="q1a">NA MALE IN VELIKE.</label><br/>
+<input type="radio" name="q15" value="b" id="q15b"><label for="q1b">NA MALE, VEČJE, VELIKE, KATASTROFALNE.</label><br/>
+<input type="radio" name="q15" value="c" id="q15c"><label for="q1c">NA MALE, VEČJE, VELIKE.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">16.	KAKO RAZDELIMO POŽARE GLEDE NA KRAJ GORENJA IN TAKTIKO GAŠENJA?</p>
+<ul class="answers">
+<input type="radio" name="q16" value="a" id="q16a"><label for="q1a">NA NOTRANJE, ZUNANJE, KOMBINIRANE IN POŽARE V NARAVNEM OKOLJU, CESTNE POŽARE.</label><br/>
+<input type="radio" name="q16" value="b" id="q16b"><label for="q1b">NA NOTRANJE, ZUNANJE, POŽARE V NARAVNEM OKOLJU.</label><br/>
+<input type="radio" name="q16" value="c" id="q16c"><label for="q1c">NA NOTRANJE, ZUNANJE, KOMBINIRANE IN POŽARE V NARAVNEM OKOLJU.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">17.	KAKO DELIMO POŽARE GLEDE NA VRSTO GORLJIVEGA MATERIALA, KI JE ZAJET V POŽAR?</p>
+<ul class="answers">
+<input type="radio" name="q17" value="a" id="q17a"><label for="q1a">POŽARI RAZREDA A, POŽARI RAZREDA B, POŽARI RAZREDA C.</label><br/>
+<input type="radio" name="q17" value="b" id="q17b"><label for="q1b">POŽARI RAZREDA A, POŽARI RAZREDA B.</label><br/>
+<input type="radio" name="q17" value="c" id="q17c"><label for="q1c">POŽARI RAZREDA A, POŽARI RAZREDA B, POŽARI RAZREDA C, POŽARI RAZREDA D.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">18.	POŽARI RAZREDA A SO POŽARI:</p>
+<ul class="answers">
+<input type="radio" name="q18" value="a" id="q18a"><label for="q1a">POŽARI LAHKIH KOVIN. (ALUMINIJ, MAGNEZIJ … IPD)</label><br/>
+<input type="radio" name="q18" value="b" id="q18b"><label for="q1b">GORLJIVIH TRDNIH SNOVI. (LES, SENO, OBLEKA … IPD)</label><br/>
+<input type="radio" name="q18" value="c" id="q18c"><label for="q1c">GORLJIVIH TEKOČIH SNOVI. (BENCIN, OLJE, NAFTA, ALKOHOL … IPD)</label><br/>
+</ul> 
+<hr>
+
+<p class="question">19.	POŽARI RAZREDA B SO POŽARI:</p>
+<ul class="answers">
+<input type="radio" name="q19" value="a" id="q19a"><label for="q1a">POŽARI LAHKIH KOVIN. (ALUMINIJ, MAGNEZIJ … IPD)</label><br/>
+<input type="radio" name="q19" value="b" id="q19b"><label for="q1b">GORLJIVIH TRDNIH SNOVI. (LES, SENO, OBLEKA … IPD)</label><br/>
+<input type="radio" name="q19" value="c" id="q19c"><label for="q1c">GORLJIVIH TEKOČIH SNOVI. (BENCIN, OLJE, NAFTA, ALKOHOL … IPD)</label><br/>
+</ul> 
+<hr>
+
+<p class="question">20.	POŽARI RAZREDA D SO POŽARI:</p>
+<ul class="answers">
+<input type="radio" name="q20" value="a" id="q20a"><label for="q1a">POŽARI LAHKIH KOVIN. (ALUMINIJ, MAGNEZIJ … IPD)</label><br/>
+<input type="radio" name="q20" value="b" id="q20b"><label for="q1b">GORLJIVIH TEKOČIH SNOVI. (BENCIN, OLJE, NAFTA, ALKOHOL … IPD)</label><br/>
+<input type="radio" name="q20" value="c" id="q20c"><label for="q1c">GORLJIVIH (VNETLJIVIH) PLINOV. (ZEMELJSKI PLIN ALI METAN, PROPAN, BUTAN, VODIK, ACETILEN, AMONIJAK … IPD)</label><br/>
+</ul> 
+<hr>
+
+<p class="question">21.	POŽARI RAZREDA C SO POŽARI:</p>
+<ul class="answers">
+<input type="radio" name="q21" value="a" id="q21a"><label for="q1a">GORLJIVIH (VNETLJIVIH) PLINOV. (ZEMELJSKI PLIN ALI METAN, PROPAN, BUTAN, VODIK, ACETILEN, AMONIJAK … IPD)</label><br/>
+<input type="radio" name="q21" value="b" id="q21b"><label for="q1b">POŽARI LAHKIH KOVIN. (ALUMINIJ, MAGNEZIJ … IPD)</label><br/>
+<input type="radio" name="q21" value="c" id="q21c"><label for="q1c">GORLJIVIH TEKOČIH SNOVI. (BENCIN, OLJE, NAFTA, ALKOHOL … IPD)</label><br/>
+</ul> 
+<hr>
+
+<p class="question">22.	KATERO GASILNO SREDSTVO JE NAJCENEJŠE IN NAJBOLJ RAZŠIRJENO?</p>
+<ul class="answers">
+<input type="radio" name="q22" value="a" id="q22a"><label for="q1a">VODA.</label><br/>
+<input type="radio" name="q22" value="b" id="q22b"><label for="q1b">DUŠIK.</label><br/>
+<input type="radio" name="q22" value="c" id="q22c"><label for="q1c">PRAH.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">23.	KAKO DELIMO GASILNE CEVI GLEDE NA PREMER?</p>
+<ul class="answers">
+<input type="radio" name="q23" value="a" id="q23a"><label for="q1a">A, B, C. </label><br/>
+<input type="radio" name="q23" value="b" id="q23b"><label for="q1b">A, B, C, D. </label><br/>
+<input type="radio" name="q23" value="c" id="q23c"><label for="q1c">A, B, C, D, E. </label><br/>
+</ul> 
+<hr>
+
+<p class="question">24.	KAKO DELIMO GASILNE CEVI GLEDE NA VRSTO?</p>
+<ul class="answers">
+<input type="radio" name="q24" value="a" id="q24a"><label for="q1a">SESALNE, TLAČNE, VISOKOTLAČNE, NAPADALNE.</label><br/>
+<input type="radio" name="q24" value="b" id="q24b"><label for="q1b">TLAČNE, VISOKOTLAČNE.</label><br/>
+<input type="radio" name="q24" value="c" id="q24c"><label for="q1c">SESALNE, TLAČNE, VISOKOTLAČNE.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">25.	ZA KAJ UPORABLJAMO GASILNE SPOJKE?</p>
+<ul class="answers">
+<input type="radio" name="q25" value="a" id="q25a"><label for="q1a">JIH NE UPORABLJAMO.</label><br/>
+<input type="radio" name="q25" value="b" id="q25b"><label for="q1b">ZA SPAJANJE SESALNIH IN TLAČNIH CEVI.</label><br/>
+<input type="radio" name="q25" value="c" id="q25c"><label for="q1c">ZA SPAJANJE SESALNIH IN TLAČNIH CEVI TER GASILSKIH ARMATUR (ROČNIK, TROJAK … IPD).</label><br/>
+</ul> 
+<hr>
+
+<p class="question">26.	KAJ JE GASILSKI PRAPOR?</p>
+<ul class="answers">
+<input type="radio" name="q26" value="a" id="q26a"><label for="q1a">GASILSKI PRAPOR JE SIMBOL V PROSTOVOLJNEM GASILSTVU. IZDELAN JE IZ SVILENE TKANINE IN OBROBLJEN Z ZLATO VRVICO. NA NJEM SO IZVEZENI SIMBOLI DRUŠTVA. UPORABLJA SE OB SVEČANIH DOGODKIH IN ZA PREDSTAVITEV DRUŠTVA.</label><br/>
+<input type="radio" name="q26" value="b" id="q26b"><label for="q1b">GASILSKI PRAPOR JE PRIPOMOČEK ZA GAŠENJE.</label><br/>
+<input type="radio" name="q26" value="c" id="q26c"><label for="q1c">GASILSKI PRAPOR JE LEPOTNI IZDELEK ZA POLEPŠANJE GASILSKEGA DOMA.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">27.	KOLIKO PIONIRJEV TEKMUJE PRI VAJI Z VEDROVKO?</p>
+<ul class="answers">
+<input type="radio" name="q27" value="a" id="q27a"><label for="q1a">9.</label><br/>
+<input type="radio" name="q27" value="b" id="q27b"><label for="q1b">10.</label><br/>
+<input type="radio" name="q27" value="c" id="q27c"><label for="q1c">8.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">28.	KAKO IMENUJEMO TEKMOVALCE, KI IMAJO RUMENE OZNAKE?</p>
+<ul class="answers">
+<input type="radio" name="q28" value="a" id="q28a"><label for="q1a">CEVARJI.</label><br/>
+<input type="radio" name="q28" value="b" id="q28b"><label for="q1b">NAPADALCI.</label><br/>
+<input type="radio" name="q28" value="c" id="q28c"><label for="q1c">VODARJI.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">29.	KAKO IMENUJEMO TEKMOVALCE, KI IMAJO RDEČE OZNAKE?</p>
+<ul class="answers">
+<input type="radio" name="q29" value="a" id="q29a"><label for="q1a">CEVARJI.</label><br/>
+<input type="radio" name="q29" value="b" id="q29b"><label for="q1b">NAPADALCI.</label><br/>
+<input type="radio" name="q29" value="c" id="q29c"><label for="q1c">VODARJI.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">30.	KAKO IMENUJEMO TEKMOVALCE, KI IMAJO MODRE OZNAKE?</p>
+<ul class="answers">
+<input type="radio" name="q30" value="a" id="q30a"><label for="q1a">CEVARJI.</label><br/>
+<input type="radio" name="q30" value="b" id="q30b"><label for="q1b">NAPADALCI.</label><br/>
+<input type="radio" name="q30" value="c" id="q30c"><label for="q1c">VODARJI.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">31.	KOLIKO VODE JE V ENEM VEDRU, KI GA TEKMOVALCA NESETA PRI VAJI Z VEDROVKO?</p>
+<ul class="answers">
+<input type="radio" name="q31" value="a" id="q31a"><label for="q1a">3 LITROV.</label><br/>
+<input type="radio" name="q31" value="b" id="q31b"><label for="q1b">4 LITROV.</label><br/>
+<input type="radio" name="q31" value="c" id="q31c"><label for="q1c">5 LITROV.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">32.	KATERO POVELJE MORA IZDATI TEKMOVALEC, KI MERI S CURKOM V TARČO PRI VAJI Z VEDROVKO?</p>
+<ul class="answers">
+<input type="radio" name="q32" value="a" id="q32a"><label for="q1a">»VODA!«</label><br/>
+<input type="radio" name="q32" value="b" id="q32b"><label for="q1b">NE POTREBUJE IZDATI NOBENEGA POVELJA.</label><br/>
+<input type="radio" name="q32" value="c" id="q32c"><label for="q1c">»ODPRI!«</label><br/>
+</ul> 
+<hr>
+
+<p class="question">33.	KAKO MORAJO BITI OBLEČENI TEKMOVALCI PRI KVIZU?</p>
+<ul class="answers">
+<input type="radio" name="q33" value="a" id="q33a"><label for="q1a">V GASILSKO DELAVNO OBLEKO.</label><br/>
+<input type="radio" name="q33" value="b" id="q33b"><label for="q1b">V GASILSKO DELAVNO OBLEKO IN ELEGANTNE ČEVLJE.</label><br/>
+<input type="radio" name="q33" value="c" id="q33c"><label for="q1c">V GASILSKO DELAVNO OBLEKO IN GASILSKIM PASOM.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">34.	KAKŠEN ROČNIK PREDAJAJO PIONIRJI PRI ŠTAFETI?</p>
+<ul class="answers">
+<input type="radio" name="q34" value="a" id="q34a"><label for="q1a">NAVADNI C-ROČNIK.</label><br/>
+<input type="radio" name="q34" value="b" id="q34b"><label for="q1b">NAVADNI D-ROČNIK.</label><br/>
+<input type="radio" name="g34" value="c" id="q34c"><label for="q1c">NAVADNI E-ROČNIK.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">35.	KOLIKO GASILSKIH REGIJ JE V SLOVENIJI?</p>
+<ul class="answers">
+<input type="radio" name="q35" value="a" id="q35a"><label for="q1a">16.</label><br/>
+<input type="radio" name="q35" value="b" id="q35b"><label for="q1b">17.</label><br/>
+<input type="radio" name="q35" value="c" id="q35c"><label for="q1c">18.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">36.	KATERI ORGAN VOLI POVELJNIKA IN PREDSEDNIKA PGD?</p>
+<ul class="answers">
+<input type="radio" name="q36" value="a" id="q36a"><label for="q1a">OBČNI ZBOR.</label><br/>
+<input type="radio" name="q36" value="b" id="q36b"><label for="q1b">UPRAVNI ODBOR.</label><br/>
+<input type="radio" name="q36" value="c" id="q36c"><label for="q1c">SE IZVOLITA SAMA.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">37.	KAKO JE ORGANIZIRANO GASILSTVO V SLOVENIJI?</p>
+<ul class="answers">
+<input type="radio" name="q37" value="a" id="q37a"><label for="q1a">V  PROSTOVOLJNIH IN POKLICNIH GASILSKIH ORGANIZACIJAH.</label><br/>
+<input type="radio" name="q37" value="b" id="q37b"><label for="q1b">SAMO V PROSTOVOLJNIH GASILSKIH ORGANIZACIJAH.</label><br/>
+<input type="radio" name="q37" value="c" id="q37c"><label for="q1c">V  PROSTOVOLJNIH, POKLICNIH GASILSKIH ORGANIZACIJAH IN ŠPORTNIH DRUŠTVIH.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">38.	KOLIKO PROSTOVOLJNIH GASILSKIH DRUŠTEV JE V SLOVENIJI?</p>
+<ul class="answers">
+<input type="radio" name="q38" value="a" id="q38a"><label for="q1a">OKROG 1500.</label><br/>
+<input type="radio" name="q38" value="b" id="q38b"><label for="q1b">OKROG 1400.</label><br/>
+<input type="radio" name="q38" value="c" id="q38c"><label for="q1c">OKROG 1300.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">39.	KJE OPRAVIMO REGISTRACIJO GASILSKEGA DRUŠTVA?</p>
+<ul class="answers">
+<input type="radio" name="q39" value="a" id="q39a"><label for="q1a">NA UPRAVNI ENOTI.</label><br/>
+<input type="radio" name="q39" value="b" id="q39b"><label for="q1b">PREKO INTERNETA.</label><br/>
+<input type="radio" name="q39" value="c" id="q39c"><label for="q1c">NA OBČINI.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">40.	KJE NA GASILSKI UNIFORMI NOSIMO OZNAKE ČINOV?</p>
+<ul class="answers">
+<input type="radio" name="q40" value="a" id="q40a"><label for="q1a">NA ROKAVU.</label><br/>
+<input type="radio" name="q40" value="b" id="q40b"><label for="q1b">NA OVRATNIKU.</label><br/>
+<input type="radio" name="q40" value="c" id="q40c"><label for="q1c">NA NARAMNIKU.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">41.	NA KATEREM ROKAVU DELOVNE OBLEKE NOSIMO ZNAK PRIPADNOSTI GASILSKI ORGANIZACIJI?</p>
+<ul class="answers">
+<input type="radio" name="q41" value="a" id="q41a"><label for="q1a">NA LEVEM.</label><br/>
+<input type="radio" name="q41" value="b" id="q41b"><label for="q1b">NA DESNEM.</label><br/>
+<input type="radio" name="q41" value="c" id="q41c"><label for="q1c">JIH NE NOSIMO.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">42.	KAKO GASILCI POZDRAVLJAJO?</p>
+<ul class="answers">
+<input type="radio" name="q42" value="a" id="q42a"><label for="q1a">Z OBRAČANJEM GLAVE.</label><br/>
+<input type="radio" name="q42" value="b" id="q42b"><label for="q1b">Z ROKO IN Z OBRAČANJEM GLAVE.</label><br/>
+<input type="radio" name="q42" value="c" id="q42c"><label for="q1c">Z ROKO, Z OBRAČANJEM GLAVE IN Z POZDRAVOM: "POZDRAVLJENI".</label><br/>
+</ul> 
+<hr>
+
+<p class="question">43.	S KATERO NOGO SE ZAČNE PREMIKANJE PRI VAJI RAZVRŠČANJA?</p>
+<ul class="answers">
+<input type="radio" name="q43" value="a" id="q43a"><label for="q1a">Z LEVO NOGO.</label><br/>
+<input type="radio" name="q43" value="b" id="q43b"><label for="q1b">Z DESNO NOGO.</label><br/>
+<input type="radio" name="q43" value="c" id="q43c"><label for="q1c">Z OBEMA.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">44.	KATERE VRSTE RADIJSKIH POSTAJ POZNAMO?</p>
+<ul class="answers">
+<input type="radio" name="q44" value="a" id="q44a"><label for="q1a">ROČNE, MOBILNE, STABILNE IN TELEFONSKE.</label><br/>
+<input type="radio" name="q44" value="b" id="q44b"><label for="q1b">ROČNE, MOBILNE IN STABILNE.</label><br/>
+<input type="radio" name="q44" value="c" id="q44c"><label for="q1c">ROČNE IN MOBILNE.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">45.	KAKO SE IMENUJE INFORMACIJSKI SISTEM ZA VODENJE EVIDENC PROSTOVOLJNIH GASILCEV?</p>
+<ul class="answers">
+<input type="radio" name="q45" value="a" id="q45a"><label for="q1a">GASILEC.</label><br/>
+<input type="radio" name="q45" value="b" id="q45b"><label for="q1b">OGNJEMET.</label><br/>
+<input type="radio" name="q45" value="c" id="q45c"><label for="q1c">VULKAN.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">46.	KAJ JE EVAKUACIJA?</p>
+<ul class="answers">
+<input type="radio" name="q46" value="a" id="q46a"><label for="q1a">ORGANIZIRAN UMIK LJUDI NA VARNO MESTO OB POŽARU.</label><br/>
+<input type="radio" name="q46" value="b" id="q46b"><label for="q1b">ORGANIZIRAN UMIK LJUDI V SOBO OB POŽARU.</label><br/>
+<input type="radio" name="q46" value="c" id="q46c"><label for="q1c">ORGANIZIRAN UMIK LJUDI IZ JEDILNICE V UČILNICE.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">47.	KAJ POMENI, ČE JE ŠTEVILU NEVARNOSTI NA OPOZORILNI TABLI ZA OZNAČEVANJE VOZIL DODANA ČRKA X?</p>
+<ul class="answers">
+<input type="radio" name="q47" value="a" id="q47a"><label for="q1a">SNOV NEVARNO REAGIRA Z VODO IN KISIKOM.</label><br/>
+<input type="radio" name="q47" value="b" id="q47b"><label for="q1b">SNOV NEVARNO REAGIRA Z OGNJEM.</label><br/>
+<input type="radio" name="q47" value="c" id="q47c"><label for="q1c">SNOV NEVARNO REAGIRA Z VODO.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">48.	KOLIKO ČASA JE POTREBNA POŽARNA STRAŽA?</p>
+<ul class="answers">
+<input type="radio" name="q48" value="a" id="q48a"><label for="q1a">NI POTREBNA.</label><br/>
+<input type="radio" name="q48" value="b" id="q48b"><label for="q1b">DOKLER JE PRISOTNA POŽARNA NEVARNOST.</label><br/>
+<input type="radio" name="q48" value="c" id="q48c"><label for="q1c">DO PRVEGA DEŽJA.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">49.	KO SE POJAVI KATASTROFALNI POŽAR V NARAVI, LAHKO GASIMO TUDI S/Z?</p>
+<ul class="answers">
+<input type="radio" name="q49" value="a" id="q49a"><label for="q1a">HELIKOPTERJI IN LETALI, KI PREVAŽAJO VODO.</label><br/>
+<input type="radio" name="q49" value="b" id="q49b"><label for="q1b">HELIKOPTERJI, LETALI IN RAKETAMI, KI PREVAŽAJO VODO.</label><br/>
+<input type="radio" name="q49" value="c" id="q49c"><label for="q1c">SAMO Z HELIKOPTERJI, KI PREVAŽAJO VODO.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">50.	KDO JE V DRUŠTVU ODGOVOREN ZA DELO Z GASILSKO MLADINO?</p>
+<ul class="answers">
+<input type="radio" name="q50" value="a" id="q50a"><label for="q1a">PREDSEDNIK.</label><br/>
+<input type="radio" name="q50" value="b" id="q50b"><label for="q1b">MENTOR GASILSKE MLADINE.</label><br/>
+<input type="radio" name="q50" value="c" id="q50c"><label for="q1c">POVELJNIK.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">51.	KAJ JE GASILNIK ALI GASILNI APARAT?</p>
+<ul class="answers">
+<input type="radio" name="q51" value="a" id="q51a"><label for="q1a">JE NAPRAVA ZA GAŠENJE KASNEJŠIH POŽAROV.</label><br/>
+<input type="radio" name="q51" value="b" id="q51b"><label for="q1b">JE NAPRAVA ZA GAŠENJE ZELO VELIKIH POŽAROV.</label><br/>
+<input type="radio" name="q51" value="c" id="q50c"><label for="q1c">JE NAPRAVA ZA GAŠENJE ZAČETNIH POŽAROV.</label><br/>
+</ul> 
+<hr>
+
+
+
+<div id="results">
+pokazi rezultate!
+</div>
+
+
+<div id="category1">
+<p><strong>vprašanje 1:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+ 
+<div id="category2">
+<p><strong>vprašanje 2:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category3">
+<p><strong>vprašanje 3:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category4">
+<p><strong>vprašanje 4:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category5">
+<p><strong>vprašanje 5:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category6">
+<p><strong>vprašanje 6:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category7">
+<p><strong>vprašanje 7:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category8">
+<p><strong>vprašanje 8:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category9">
+<p><strong>vprašanje 9:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category10">
+<p><strong>vprašanje 10:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category11">
+<p><strong>vprašanje 11:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category12">
+<p><strong>vprašanje 12:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category13">
+<p><strong>vprašanje 13:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category14">
+<p><strong>vprašanje 14:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category15">
+<p><strong>vprašanje 15:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category16">
+<p><strong>vprašanje 16:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category17">
+<p><strong>vprašanje 17:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category18">
+<p><strong>vprašanje 18:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category19">
+<p><strong>vprašanje 19:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category20">
+<p><strong>vprašanje 20:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category21">
+<p><strong>vprašanje 21:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category22">
+<p><strong>vprašanje 22:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category23">
+<p><strong>vprašanje 23:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category24">
+<p><strong>vprašanje 24:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category25">
+<p><strong>vprašanje 25:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category26">
+<p><strong>vprašanje 26:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category27">
+<p><strong>vprašanje 27:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category28">
+<p><strong>vprašanje 28:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category29">
+<p><strong>vprašanje 29:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category30">
+<p><strong>vprašanje 30:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category31">
+<p><strong>vprašanje 31:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category32">
+<p><strong>vprašanje 32:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category33">
+<p><strong>vprašanje 33:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category34">
+<p><strong>vprašanje 34:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category35">
+<p><strong>vprašanje 35:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category36">
+<p><strong>vprašanje 36:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category37">
+<p><strong>vprašanje 37:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category38">
+<p><strong>vprašanje 38:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category39">
+<p><strong>vprašanje 39:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category40">
+<p><strong>vprašanje 40:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category41">
+<p><strong>vprašanje 41:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category42">
+<p><strong>vprašanje 42:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category43">
+<p><strong>vprašanje 43:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category44">
+<p><strong>vprašanje 44:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category45">
+<p><strong>vprašanje 45:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category46">
+<p><strong>vprašanje 46:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category47">
+<p><strong>vprašanje 47:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category48">
+<p><strong>vprašanje 48:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category49">
+<p><strong>vprašanje 49:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category50">
+<p><strong>vprašanje 50:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+
+<div id="category51">
+<p><strong>vprašanje 51:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+
+<div id="category52">            
+<p>                
+vse si odogovoril pravilno!</p>        
+</div>
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/quiz-1.js"></script> 
+
+<head>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="quiz-1.js"></script> 
+
+<style>
+.answers li {
+list-style: upper-alpha;
+}
+
+label {
+margin-left: 0.5em;
+cursor: pointer;
+}
+
+#results {
+background: #dddada;
+color: 000000;
+padding: 3px;
+text-align: center;
+width: 200px;
+cursor: pointer;
+border: 1px solid gray;
+}
+
+#results:hover {
+background: #3d91b8;
+color: #ffffff;
+padding: 3px;
+text-align: center;
+width: 200px;
+cursor: pointer;
+border: 1px solid gray;
+}
+
+#categorylist {
+margin-top: 6px;
+display: none;
+}
+
+#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11{
+display: none;
+}
+
+#closing {
+display: none;
+font-style: italic;
+} 
+</style>
+</head>
+
+
+<body>
+<h1 style="color:blue;">ZGODOVINA</h1>
+
+<p class="question">1.	KJE JE BILO USTANOVLJENO PRVO GASILSKO DRUŠTVO? </p>
+<ul class="answers">
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">V LJUBLJANI.</label><br/>
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">V METLIKI.</label><br/>
+<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">V NOVEM MESTU.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">2.	KAKO SO SE OB USTANOVITVI IMENOVALA NAJSTAREJŠA GASILSKA DRUŠTVA V SLOVENIJI? </p>
+<ul class="answers">
+<input type="radio" name="q2" value="a" id="q2a"><label for="q1a">POKLICNI GASILCI.</label><br/>
+<input type="radio" name="q2" value="b" id="q2b"><label for="q1b">PROSTOVOLJNI GASILCI.</label><br/>
+<input type="radio" name="q2" value="c" id="q2c"><label for="q1c">POŽARNE BRAMBE.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">3.	KATEREGA LETA JE BILA USTANOVLJENA PRVA PROSTOVOLJNA POŽARNA BRAMBA NA SLOVENSKEM? </p>
+<ul class="answers">
+<input type="radio" name="q3" value="a" id="q3a"><label for="q1a">1923. </label><br/>
+<input type="radio" name="q3" value="b" id="q3b"><label for="q1b">1755.</label><br/>
+<input type="radio" name="q3" value="c" id="q3c"><label for="q1c">1869.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">4.	KDO JE BIL USTANOVITELJ NAJSTAREJŠEGA GASILSKEGA DRUŠTVA V SLOVENIJI? </p>
+<ul class="answers">
+<input type="radio" name="q4" value="a" id="q4a"><label for="q1a">DR. MIHA MOŽAK.</label><br/>
+<input type="radio" name="q4" value="b" id="q4b"><label for="q1b">DR. JOSIP SAVINŠEK.</label><br/>
+<input type="radio" name="q4" value="c" id="q4c"><label for="q1c">DR. DEJAN PAVLIČEK.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">5.	KDO JE BIL PRVI PREDSEDNIK GASILSKE ZVEZE SLOVENIJE? </p>
+<ul class="answers">
+<input type="radio" name="q5" value="a" id="q5a"><label for="q1a">MATEVŽ HACE.</label><br/>
+<input type="radio" name="q5" value="b" id="q5b"><label for="q1b">JOSIP JURČIČ.</label><br/>
+<input type="radio" name="q5" value="c" id="q5c"><label for="q1c">SAMO VODOPIVEC.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">6.	KJE JE BILA V SLOVENIJE USTANOVLJENA PRVA GASILSKA ŠOLA? </p>
+<ul class="answers">
+<input type="radio" name="q6" value="a" id="q6a"><label for="q1a">V ŽIREH.</label><br/>
+<input type="radio" name="q6" value="b" id="q6b"><label for="q1b">V RADOMLJAH.</label><br/>
+<input type="radio" name="q6" value="c" id="q6c"><label for="q1c">V KOČEVJU.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">7.	KJE JE SLOVENSKI GASILSKI MUZEJ? </p>
+<ul class="answers">
+<input type="radio" name="q7" value="a" id="q7a"><label for="q1a">V METLIKI.</label><br/>
+<input type="radio" name="q7" value="b" id="q7b"><label for="q1b">V LJUBLJANI.</label><br/>
+<input type="radio" name="q7" value="c" id="q7c"><label for="q1c">V NOVEM MESTU.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">8.	KDO JE ZAVETNIK GASILCEV? </p>
+<ul class="answers">
+<input type="radio" name="q8" value="a" id="q8a"><label for="q1a">SVETI MATEUŽ.</label><br/>
+<input type="radio" name="q8" value="b" id="q8b"><label for="q1b">SVETI MATJAŽ.</label><br/>
+<input type="radio" name="q8" value="c" id="q8c"><label for="q1c">SVETI  FLORJAN.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">9.	KDO JE SEDANJI POVELJNIK GASILSKE ZVEZE SLOVENIJE? </p>
+<ul class="answers">
+<input type="radio" name="q9" value="a" id="q9a"><label for="q1a">MIHA NOVAK.</label><br/>
+<input type="radio" name="q9" value="b" id="q9b"><label for="q1b">FRANCI SOBOTNIK.</label><br/>
+<input type="radio" name="q9" value="c" id="q9c"><label for="q1c">FRANCI PETEK.</label><br/>
+</ul> 
+<hr>
+
+<p class="question">10.	KDO JE SEDANJI PREDSEDNIK GASILSKE ZVEZE SLOVENIJE? </p>
+<ul class="answers">
+<input type="radio" name="q10" value="a" id="q10a"><label for="q1a">JOŠT JAKŠA.</label><br/>
+<input type="radio" name="q10" value="b" id="q10b"><label for="q1b">TONE BASARIČ.</label><br/>
+<input type="radio" name="q10" value="c" id="q10c"><label for="q1c">PETER PETROVIČ.</label><br/>
+</ul> 
+<hr>
+
+
+
+
+<div id="results">
+pokazi rezultate!
+</div>
+
+
+<div id="category1">
+<p><strong>vprašanje 1:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+ 
+<div id="category2">
+<p><strong>vprašanje 2:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category3">
+<p><strong>vprašanje 3:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category4">
+<p><strong>vprašanje 4:</strong> pravilen odgovor je <strong>odovor 2</strong>.</p>
+</div> 
+  
+<div id="category5">
+<p><strong>vprašanje 5:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category6">
+<p><strong>vprašanje 6:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category7">
+<p><strong>vprašanje 7:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+  
+<div id="category8">
+<p><strong>vprašanje 8:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category9">
+<p><strong>vprašanje 9:</strong> pravilen odgovor je <strong>odovor 3</strong>.</p>
+</div> 
+  
+<div id="category10">
+<p><strong>vprašanje 10:</strong> pravilen odgovor je <strong>odovor 1</strong>.</p>
+</div> 
+
+<div id="category11">            
+<p>                
+vse si odogovoril pravilno!</p>        
+</div>
+ 
+
+
+</body>
+</html>
